@@ -1,10 +1,12 @@
 import Image from "next/image"
 import { useState } from "react"
+import { FaArrowDown } from "react-icons/fa"
 
 export default function TabsContent() {
   const [tabNumber, setTabNumber] = useState(1)
 
   return (
+  <>
     <div id="tabs">
       <div className="text-center border-2 border-black text-black bg-[#D1E8E2] font-mono text-3xl font-bold py-5">
         Skeleton Tabs For Reuse
@@ -82,5 +84,14 @@ export default function TabsContent() {
         )}
       </div>
     </div>
+    <div className="flex flex-col items-center justify-center pt-10 animate-bounce cursor-pointer">
+      {/* <a href="#tabs" className="text-center"> */}
+        <h1 className="text-3xl font-bold font-mono">Go to Next component</h1>
+        <div className="flex items-center justify-center">
+          <FaArrowDown className="text-3xl text-center text-black" />
+        </div>
+      {/* </a> */}
+    </div>
+  </>
   )
 }

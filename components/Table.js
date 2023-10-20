@@ -1,3 +1,5 @@
+import { FaArrowDown } from 'react-icons/fa';
+
 export default function Table() {
   const tableData = [
     {
@@ -69,6 +71,7 @@ export default function Table() {
   ]
 
   return (
+    <>
     <div id="table" className="overflow-x-auto pt-5">
       <div className="flex flex-col items-center justify-center bg-[#D1E8E2] py-5 min-w-full">
         <h1 className="text-3xl font-bold text-black font-mono text-center">Data Table</h1>
@@ -122,5 +125,15 @@ export default function Table() {
         </tbody>
       </table>
     </div>
+
+    <div className="flex flex-col items-center justify-center pt-10 animate-bounce">
+      <a href="#tabs" className="text-center">
+        <h1 className="text-3xl font-bold font-mono">Go to Tabs Component</h1>
+        <div className="flex items-center justify-center">
+          <FaArrowDown className="text-3xl text-center text-black" />
+        </div>
+      </a>
+    </div>
+    </>
   );
 }
