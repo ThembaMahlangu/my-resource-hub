@@ -69,8 +69,8 @@ export default function Table() {
   ]
 
   return (
-    <div className="overflow-x-auto pt-5">
-      <div className="flex flex-col items-center justify-center bg-[#D1E8E2] py-5">
+    <div id="table" className="overflow-x-auto pt-5">
+      <div className="flex flex-col items-center justify-center bg-[#D1E8E2] py-5 min-w-full">
         <h1 className="text-3xl font-bold text-black font-mono text-center">Data Table</h1>
       </div>
       <table className="min-w-full bg-[#D1E8E2] shadow-lg rounded font-mono">

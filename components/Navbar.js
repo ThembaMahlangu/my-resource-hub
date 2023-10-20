@@ -23,12 +23,15 @@ const Navbar = () => {
           Themba's Resource Hub
         </Link>
 
-        <div className="hidden mr-72 sm:flex items-center space-x-4 flex-grow justify-center lg:space-x-8 lg:text-lg">
+        <div className="hidden mr-20 sm:flex items-end space-x-4 flex-grow justify-end lg:space-x-8 lg:text-lg">
           <Link href="/" className={`nav-link ${isActive('/')}`}>
             Home
           </Link>
           <Link href="/components" className={`nav-link ${isActive('/components')}`}>
             Components
+          </Link>
+          <Link href="/documentation" className={`nav-link ${isActive('/documentation')}`}>
+            Documentation
           </Link>
         </div>
       </nav>
@@ -62,6 +65,9 @@ const Navbar = () => {
               </Link>
               <Link href="/components" className={`block nav-link ${isActive('/components')}`}>
                 Components
+              </Link>
+              <Link href="/documentation" className={`block nav-link ${isActive('/documentation')}`}>
+                Documentation
               </Link>
             </div>
           </div>
