@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Table from "@/components/Table";
 import TabsContent from "@/components/TabsContent";
+import VideoPlayer from "@/components/VideoPlayer";
 import Head from "next/head";
 
 export default function Components() {
@@ -18,7 +19,7 @@ export default function Components() {
             <TabsContent />
           </div>
           <div className="pt-5">
-            
+            <VideoPlayer />
           </div>
         </main>
         <Footer />
