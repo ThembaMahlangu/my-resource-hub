@@ -1,3 +1,4 @@
+import AudioPlayer from "@/components/AudioPlayer";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Table from "@/components/Table";
@@ -20,6 +21,9 @@ export default function Components() {
           </div>
           <div className="pt-5">
             <VideoPlayer />
+          </div>
+          <div className="pt-5">
+            <AudioPlayer />
           </div>
         </main>
         <Footer />
