@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Table from "@/components/Table";
 import TabsContent from "@/components/TabsContent";
 import VideoPlayer from "@/components/VideoPlayer";
+import Youtube from "@/components/Youtube";
 import Head from "next/head";
 
 export default function Components() {
@@ -24,6 +25,9 @@ export default function Components() {
           </div>
           <div className="pt-5">
             <AudioPlayer />
+          </div>
+          <div className="pt-5">
+            <Youtube />
           </div>
         </main>
         <Footer />

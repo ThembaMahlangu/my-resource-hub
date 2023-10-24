@@ -90,7 +90,9 @@ export default function AudioPlayer() {
   };
 
   return (
-    <div className="bg-gray-900 p-4 rounded-md shadow-lg text-white text-center">
+    <>
+    <div className="bg-gray-900 p-4 rounded-md shadow-lg text-white text-center" id="audioplayer">
+      <h1 className="text-3xl font-bold text-center p-10 border my-3">Audio Player</h1>
       <div className="mb-4">
         <img src={track.thumbnail} alt={track.title} className="w-64 h-64 mx-auto rounded-lg" />
       </div>
@@ -132,5 +134,6 @@ export default function AudioPlayer() {
         onPlay={handleTimeUpdate}
       />
     </div>
+    </>
   );
 }
